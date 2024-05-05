@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.19",
+    "@heroicons/react": "^2.1.3",
+    "country-state-city": "^3.2.1",
     "lucide-react": "^0.319.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

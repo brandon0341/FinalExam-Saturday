@@ -1,36 +1,34 @@
 import React, { useState } from "react";
 import { Dumbbell, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import PrimaryBtn from "../Button/PrimaryBtn";
-import Tication from "../Authen/Tication";
 
-const Navbar = () => {
+const Mnavbar = () => {
   const [navbar, setNavbar] = useState(false);
   const navItems = [
     {
       name: "Home",
-      link: "/",
+      link: "*",
     },
     {
       name: "About",
-      link: "/about",
+      link: "/mabout",
     },
     {
       name: "Services",
-      link: "/services",
+      link: "/mservices",
     },
     {
       name: "Plan",
-      link: "/plan",
+      link: "/mplan",
     },
     {
       name: "Contact",
-      link: "/contact",
+      link: "/mcontact",
     },
   ];
   return (
     <>
-      <nav className="w-full h-auto bg-[#1d1d1d] shadow-none lg:px-24 md:px-16 sm:px-6 px-4 py-3">
+      <nav className="w-full h-auto absolute bg-[#1d1d1d] z-10 mt-[-4%] shadow-none lg:px-24 md:px-16 sm:px-6 px-4 py-3">
         <div className="justify-between mx-auto lg:w-full md:items-center md:flex">
           {/* Navbar logo & toggle button section */}
           <div>
@@ -70,13 +68,6 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              <PrimaryBtn>
-                <Link
-                  to={'/sign'}
-                >
-                  Become A Member
-                </Link>
-              </PrimaryBtn>
             </ul>
           </div>
         </div>
@@ -85,4 +76,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Mnavbar;

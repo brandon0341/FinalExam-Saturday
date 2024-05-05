@@ -12,31 +12,31 @@ const Services = ()=> {
           icon: Dumbbell,
           title: "Fitness",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "#services",
+          link: "/plan",
         },
         {
           id: 2,
-          serviceImg: "https://source.unsplash.com/random/?yoga",
-          icon: Dumbbell,
-          title: "Yoga",
-          desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "#services",
-        },
-        {
-          id: 3,
           serviceImg: "https://source.unsplash.com/random/?gym",
           icon: Dumbbell,
           title: "Gym",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "#services",
+          link: "/plan",
+        },
+        {
+          id: 3,
+          serviceImg: "https://source.unsplash.com/random/?nutrition",
+          icon: Dumbbell,
+          title: "Nutrition",
+          desc: "Get ready to burn off some serious fat with our high quality products.",
+          link: "/plan",
         },
         {
           id: 4,
-          serviceImg: "https://source.unsplash.com/random/?aerobics",
+          serviceImg: "https://source.unsplash.com/random/?locker-room-showers",
           icon: Dumbbell,
-          title: "Aerobics",
+          title: "Locker room/shower",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "#services",
+          link: "/plan",
         },
         {
           id: 5,
@@ -44,31 +44,15 @@ const Services = ()=> {
           icon: Dumbbell,
           title: "Boxing",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "#services",
+          link: "/plan",
         },
         {
           id: 6,
-          serviceImg: "https://source.unsplash.com/random/?yoga",
+          serviceImg: "https://source.unsplash.com/random/?coach",
           icon: Dumbbell,
-          title: "Yoga",
+          title: "Personal Trainer",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "#services",
-        },
-        {
-          id: 7,
-          serviceImg: "https://source.unsplash.com/random/?gym",
-          icon: Dumbbell,
-          title: "Gym",
-          desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "#services",
-        },
-        {
-          id: 8,
-          serviceImg: "https://source.unsplash.com/random/?zumba",
-          icon: Dumbbell,
-          title: "Zumba",
-          desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "#services",
+          link: "/plan",
         },
       ];
       
@@ -79,7 +63,7 @@ const Services = ()=> {
                 <Dumbbell className="w-4 h-4 -rotate-45 text-indigo-600"/>
                 Our Services
             </h6>
-            <div className="w-full h-auto flex items-center justify-center gap-x-4 gap-y-5 flex-wrap mb-10">
+            <div className="w-full h-auto flex items-center justify-start gap-x-4 gap-y-5 flex-wrap mb-10">
               {/* loop display */}
               {services.map((data)=> (
                 <div 

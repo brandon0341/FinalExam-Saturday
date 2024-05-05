@@ -1,8 +1,6 @@
 import React from "react";
-import PrimaryBtn from "../../components/Button/PrimaryBtn";
-import { Link } from "react-router-dom";
 
-const Banner = () => {
+const Mbanner = () => {
     return (
         <>
             <div
@@ -22,14 +20,9 @@ const Banner = () => {
                 <p className="text-lg text-gray-300 font-medium mb-8 text-center">
                     Ignite Your Fitness Journey with Premium Solutions.
                 </p>
-                <PrimaryBtn className="px-10 py-3 uppercase rounded-full">
-                    <Link to={'/sign'}>
-                        Become a Member
-                    </Link>
-                </PrimaryBtn>
             </div>
         </>
     )
 }
 
-export default Banner
+export default Mbanner

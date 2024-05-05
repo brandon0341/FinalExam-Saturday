@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -73,7 +74,11 @@ const Hero = () => {
                             <p className="lg:text-lg md:text-base sm:text-base text-base text-gray-500 font-medium mb-6 text-center">
                                 {data.desc}
                             </p>
-                            <PrimaryBtn className="lg:w-[15%] md:w-[35%] sm:w-[75%] w-[80%] h-14 mt-5 text-xl font-semibold rounded-full">Get Started</PrimaryBtn>
+                            <PrimaryBtn className="lg:w-[15%] md:w-[35%] sm:w-[75%] w-[80%] h-14 mt-5 text-xl font-semibold rounded-full">
+                                <Link to="/plan">
+                                    Get Started
+                                </Link>
+                            </PrimaryBtn>
                         </div>
                     </SwiperSlide>
                     ))}
@@ -83,13 +88,13 @@ const Hero = () => {
                 <div className="w-full h-auto flex items-center lg:justify-between md:justify-between sm:justify-center justify-center lg:gap-7 md:gap-7 sm:gap-5 gap-5 lg:px-24 md:px-16 sm:px-6 px-6 mt-6 flex-wrap">
                     <div className="flex items-center justify-center flex-col lg:w-fit md:w-[48%] sm:w-[48%] w-full lg:py-6 md:py-7 sm:py-8 py-9 px-10 bg-black/10 hover:bg-black/30 rounded-md ease-out duration-700 cursor-pointer">
                         <h5 className="text-4xl text-indigo-400 font-semibold mb-2 uppercase">
-                            1000+
+                            1000
                         </h5>
-                        <p className="text-lg text-gray-600 font-medium">Memberes</p>
+                        <p className="text-lg text-gray-600 font-medium">Members</p>
                     </div>
                     <div className="flex items-center justify-center flex-col lg:w-fit md:w-[48%] sm:w-[48%] w-full lg:py-6 md:py-7 sm:py-8 py-9 px-10 bg-black/10 hover:bg-black/30 rounded-md ease-out duration-700 cursor-pointer">
                         <h5 className="text-4xl text-indigo-400 font-semibold mb-2 uppercase">
-                            80
+                            30
                         </h5>
                         <p className="text-lg text-gray-600 font-medium">Professional Trainers</p>
                     </div>
@@ -101,7 +106,7 @@ const Hero = () => {
                     </div>
                     <div className="flex items-center justify-center flex-col lg:w-fit md:w-[48%] sm:w-[48%] w-full lg:py-6 md:py-7 sm:py-8 py-9 px-10 bg-black/10 hover:bg-black/30 rounded-md ease-out duration-700 cursor-pointer">
                         <h5 className="text-4xl text-indigo-400 font-semibold mb-2 uppercase">
-                            20
+                            10
                         </h5>
                         <p className="text-lg text-gray-600 font-medium">GYM's</p>
                     </div>
