@@ -1,0 +1,144 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.816);
+}
+
+.container{
+    height: 160vh;
+    width: 600px;
+    padding: 25px;
+    padding-top: 20px;
+    border-radius: 12px;
+    border: 3px solid rgba(128, 128, 128, 0.777);
+    background: #000000c8;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+
+.container h3{
+    margin-bottom: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    font-style: italic;
+    color: rgb(141, 3, 239);
+}
+
+.container h3::after{
+    content: '';
+    width: 80px;
+    height: 5px;
+    background: rgb(126, 3, 214);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.container .select_option select{
+    padding: 10px;
+    box-shadow: none !important;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border: 2px solid #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .select_option select:first-child{
+    border-color: rgba(76, 0, 130, 0.723);
+}
+
+.container .select_option select:nth-child(2){
+    margin: 20px 0;
+    border-color: rgba(76, 0, 130, 0.723);
+}
+
+.container .select_option select:nth-child(3){
+    border-color: rgba(76, 0, 130, 0.723);
+}
+
+
+Input{
+    position: absolute;
+    width: 36.6%;
+    margin-top: 1%;
+    height: 7%;
+    font-size: 20px;
+    border-color: rgba(76, 0, 130, 0.723);
+}
+
+.paycard{
+    position: absolute;
+    width: 60%;
+    height: 35em;
+    font-size: 20px;
+}
+
+#date{
+    position: absolute;
+    width: 20%;
+    font-size: 20px;
+}
+#dates{
+    position: absolute;
+    width: 20%;
+    margin-left: 25%;
+    font-size: 20px;
+}
+
+.other{
+    position: absolute;
+    display: flex;
+    font-size: 18px;
+    width: 60%;
+    height: 10%;
+    margin-top: 10%;
+    color: rgb(152, 8, 255);
+}
+
+#op1{
+    position: absolute;
+    margin-left: 8%;
+}
+
+#op2{
+    position: absolute;
+    margin-left: 30%;
+}
+
+.other input{
+    position: relative;
+    height: 20px;
+    margin-left: -15%;
+}
+
+.another{
+    position: absolute;
+    width: 30%;
+    height: 15em;
+    margin-top: 22%;
+    left: 35%;
+    background: white;
+}
+
+.butts{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 120%;
+}
+
+button{
+    color: rgb(179, 179, 179);
+    width: 40%;
+    height: 45%;
+    background: rgba(76, 0, 130, 0.795);
+    border-radius: 2%;
+}
+
+button:hover{
+    background: rgb(76, 0, 130);
+}
