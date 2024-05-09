@@ -9,12 +9,22 @@ import PricingPlan from "./pages/Home/PricingPlan";
 import Contact from "./pages/Home/Contact";
 import Tication from "./components/Authen/Tication";
 import Login from "./components/Authen/login";
+import Trainers from "./pages/Home/Trainers";
 import Mabout from "./member/Mabout";
 import Mservices from "./member/Mservices";
 import MpricingPlan from "./member/MpricingPlan";
 import Mcontact from "./member/Mcontact";
-import Mtrainers from "./member/Mtrainers"
-import Payment from "./components/Authen/payment";
+import Mtrainers from "./member/Mtrainers";
+import Fitness from "./service/fitness";
+import Gym from "./service/Gym";
+import Locsho from "./service/Locsho";
+import Boxing from "./service/boxing";
+import Nutrition from "./service/Nutrition";
+import Mfitness from "./mservice/mFitness";
+import Mgym from "./mservice/mGym";
+import Mlocsho from "./mservice/mLocsho";
+import Mboxing from "./mservice/mBoxing";
+import Mnutrition from "./mservice/Mnutrition";
 
 function App() {
   return (
@@ -30,13 +40,26 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/tication" element={<Tication />} />
             <Route path="/sign" element={<Login />} />
+            
             <Route path="*" element={<Mhome />} />
+            <Route path="/train" element={<Trainers />} />
             <Route path="/mabout" element={<Mabout />} />
             <Route path="/mservices" element={<Mservices />} />
             <Route path="/mplan" element={<MpricingPlan />} />
             <Route path="/mcontact" element={<Mcontact />} />
+            
+            <Route path="/fit" element={<Fitness />} />
+            <Route path="/gym" element={<Gym />} />
+            <Route path="/locsho" element={<Locsho />} />
+            <Route path="/boxing" element={<Boxing />} />
+            <Route path="/nutrient" element={<Nutrition />} />
+
             <Route path="/mtrain" element={<Mtrainers />} />
-            <Route path="/paym" element={<Payment />} />
+            <Route path="/mfit" element={<Mfitness />} />
+            <Route path="/mgym" element={<Mgym />} />
+            <Route path="/mlocsho" element={<Mlocsho />} />
+            <Route path="/mboxing" element={<Mboxing />} />
+            <Route path="/mnutrient" element={<Mnutrition />} />
           </Routes>
         </Router>
       </div>

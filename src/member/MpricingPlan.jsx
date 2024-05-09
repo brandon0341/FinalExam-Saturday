@@ -111,7 +111,7 @@ const MpricingPlan = () => {
                             </div>
                         </div>
                         <PrimaryBtn className="w-full h-11 text-lg justify-center font-semibold tracking-wide mb-3 uppercase">
-                            <Link to={'/paym'}>
+                            <Link to="http://127.0.0.1:5500/src/components/Location/index.html">
                             Select Plan
                             </Link>
                         </PrimaryBtn>
@@ -169,7 +169,7 @@ const MpricingPlan = () => {
                             </div>
                         </div>
                         <PrimaryBtn className="w-full h-11 text-lg justify-center font-semibold tracking-wide mb-3 uppercase">
-                        <Link to={'/paym'}>
+                        <Link to="http://127.0.0.1:5500/src/components/Location/index.html" exact>
                             Select Plan
                             </Link>
                         </PrimaryBtn>
@@ -224,7 +224,7 @@ const MpricingPlan = () => {
                             </div>
                         </div>
                         <PrimaryBtn className="w-full h-11 text-lg justify-center font-semibold tracking-wide mb-3 uppercase">
-                        <Link to={'/paym'}>
+                        <Link to="http://127.0.0.1:5500/src/components/Location/index.html">
                             Select Plan
                             </Link>
                         </PrimaryBtn>

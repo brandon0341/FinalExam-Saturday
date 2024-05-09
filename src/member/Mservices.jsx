@@ -35,7 +35,7 @@ const Mservices = () => {
       icon: Dumbbell,
       title: "Fitness",
       desc: "Get ready to burn off some serious fat with our high quality products.",
-      link: "#services",
+      link: "/mfit",
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ const Mservices = () => {
       icon: Dumbbell,
       title: "Gym",
       desc: "Get ready to burn off some serious fat with our high quality products.",
-      link: "#services",
+      link: "/mgym",
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ const Mservices = () => {
       icon: Dumbbell,
       title: "Nutrition",
       desc: "Get ready to burn off some serious fat with our high quality products.",
-      link: "#services",
+      link: "/mnutrient",
     },
     {
       id: 4,
@@ -59,7 +59,7 @@ const Mservices = () => {
       icon: Dumbbell,
       title: "Locker room/shower",
       desc: "Get ready to burn off some serious fat with our high quality products.",
-      link: "#services",
+      link: "/mlocsho",
     },
     {
       id: 5,
@@ -67,7 +67,7 @@ const Mservices = () => {
       icon: Dumbbell,
       title: "Boxing",
       desc: "Get ready to burn off some serious fat with our high quality products.",
-      link: "#services",
+      link: "/mboxing",
     },
     {
       id: 6,
@@ -75,7 +75,7 @@ const Mservices = () => {
       icon: Dumbbell,
       title: "Personal Trainer",
       desc: "Get ready to burn off some serious fat with our high quality products.",
-      link: "#services",
+      link: "/mtrain",
     },
   ];
 

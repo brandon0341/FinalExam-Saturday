@@ -12,7 +12,7 @@ const Services = ()=> {
           icon: Dumbbell,
           title: "Fitness",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "/plan",
+          link: "/fit",
         },
         {
           id: 2,
@@ -20,7 +20,7 @@ const Services = ()=> {
           icon: Dumbbell,
           title: "Gym",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "/plan",
+          link: "/gym",
         },
         {
           id: 3,
@@ -28,7 +28,7 @@ const Services = ()=> {
           icon: Dumbbell,
           title: "Nutrition",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "/plan",
+          link: "/nutrient",
         },
         {
           id: 4,
@@ -36,7 +36,7 @@ const Services = ()=> {
           icon: Dumbbell,
           title: "Locker room/shower",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "/plan",
+          link: "/locsho",
         },
         {
           id: 5,
@@ -44,7 +44,7 @@ const Services = ()=> {
           icon: Dumbbell,
           title: "Boxing",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "/plan",
+          link: "/boxing",
         },
         {
           id: 6,
@@ -52,7 +52,7 @@ const Services = ()=> {
           icon: Dumbbell,
           title: "Personal Trainer",
           desc: "Get ready to burn off some serious fat with our high quality products.",
-          link: "/plan",
+          link: "/train",
         },
       ];
       

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.816);
+        }
+
+        .container {
+            height: 120vh;
+            width: 600px;
+            padding: 25px;
+            padding-top: 20px;
+            border-radius: 12px;
+            border: 3px solid rgba(128, 128, 128, 0.777);
+            background: #000000c8;
+            box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+        }
+
+        .container h3 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+            position: relative;
+            font-style: italic;
+            color: rgb(141, 3, 239);
+        }
+
+        .container h3::after {
+            content: '';
+            width: 80px;
+            height: 5px;
+            background: rgb(126, 3, 214);
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+        }
+
+        Input {
+            position: absolute;
+            width: 36.6%;
+            margin-top: 1%;
+            height: 7%;
+            font-size: 20px;
+            border-color: rgba(76, 0, 130, 0.723);
+        }
+
+        .paycard {
+            position: absolute;
+            width: 60%;
+            height: 35em;
+            font-size: 20px;
+        }
+
+        .paycard label{
+            color: white;
+        }
+
+        #date {
+            position: absolute;
+            width: 20%;
+            font-size: 20px;
+        }
+
+        #dates {
+            position: absolute;
+            width: 20%;
+            margin-left: 25%;
+            font-size: 20px;
+        }
+
+        .other {
+            position: absolute;
+            display: flex;
+            font-size: 18px;
+            width: 60%;
+            height: 10%;
+            margin-top: 10%;
+            color: rgb(152, 8, 255);
+        }
+
+        #op1 {
+            position: absolute;
+            margin-left: 8%;
+        }
+
+        #op2 {
+            position: absolute;
+            margin-left: 30%;
+        }
+
+        .other input {
+            position: relative;
+            height: 20px;
+            margin-left: -15%;
+        }
+
+        .another {
+            position: absolute;
+            width: 30%;
+            height: 21em;
+            margin-top: 23%;
+            left: 35%;
+            padding: 5px;
+            background: white;
+        }
+
+        .another input {
+            position: relative;
+            text-decoration: underline;
+            border: none;
+            width: 65%;
+            height: 40px;
+        }
+
+        h4 {
+            position: relative;
+            text-align: center;
+        }
+
+        .pay {
+            color: #000000;
+            position: relative;
+            font-weight: 400;
+            width: 97%;
+            height: auto;
+            padding: 8px;
+            background: rgb(221, 219, 219);
+        }
+
+        .cash {
+            margin-top: 0;
+        }
+
+        #payg {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin-left: 80%;
+        }
+
+        #opi {
+            position: absolute;
+            margin-left: 50%;
+            width: 30%;
+        }
+
+        .your {
+            color: #000000;
+            position: relative;
+            font-weight: 400;
+            width: 98%;
+            height: auto;
+            padding: 5px;
+            background: rgb(221, 219, 219);
+        }
+
+        .amount {
+            position: absolute;
+            margin-top: 15px;
+        }
+
+        .amount a {
+            position: absolute;
+            margin-left: 13em;
+        }
+
+        .total a {
+            font-size: 20px;
+            position: absolute;
+            margin-left: 11em;
+        }
+
+        .conf {
+            font-style: italic;
+            color: rgba(0, 0, 0, 0.632);
+            font-size: large;
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        .line {
+            position: relative;
+            margin-top: 7%;
+        }
+
+        .om{
+            color: white;
+            position: absolute;
+            margin-top: 20%;
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: #000000ed;
+        }
+        button {
+            position: absolute;
+            color: rgb(179, 179, 179);
+            width: 30%;
+            height: 7%;
+            background: rgba(76, 0, 130, 0.795);
+            border-radius: 50px;
+            font-size: 1.5rem;
+            margin-top: 48%;
+            margin-left: 6%;
+        }
+
+        button:hover {
+            background: rgb(76, 0, 130);
+        }
+    </style>
+
+    <div class="container">
+        <h3>Pay with</h3>
+        <div class="paycard">
+            <label for="email">Email :</label><br>
+            <input type="text" name="email" placeholder="Email :"><br><br><br>
+            <label for="card">Card :</label><br>
+            <input type="text" name="card" placeholder="* **** **** **"><br><br><br>
+            <label for="cvc">CVC :</label><br>
+            <input type="text" id="date" name="cvc" placeholder="Expiration: Year">
+            <input type="text" id="dates" placeholder=": Month">
+
+        </div>
+
+        <p class="om">Other Method :</p>
+
+        <div class="another">
+            <h4>GYM</h4>
+            <div class="pay">PAY WITH</div>
+            <p class="cash">Gcash<label for="option1" id="opi">PHP 000.00 Available Balance</label>
+                <input type="radio" id="payg" name="option" value="option1">
+            </p>
+            <p class="cash">Paypal<label for="option1" id="opi">PHP 000.00 Available Balance</label>
+                <input type="radio" id="payg" name="option" value="option1">
+            </p>
+            <div class="your">YOU ARE ABOUT TO PAY</div>
+            <p class="amount">Amount <a href="">1</a></p>
+            <div class="line">_______________________________________________</div>
+            <p class="total">Total <a href="">1</a></p>
+            <p class="conf">Confirm transaction?</p>
+        </div>
+
+        <div class="butts">
+            <a href="/src/dashprof.jsx"><button>Add</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
