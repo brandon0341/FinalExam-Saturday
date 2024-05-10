@@ -25,6 +25,10 @@ import Mgym from "./mservice/mGym";
 import Mlocsho from "./mservice/mLocsho";
 import Mboxing from "./mservice/mBoxing";
 import Mnutrition from "./mservice/Mnutrition";
+import Bayad from "./components/Payment/Bayad";
+import Dashprof from "./components/Dashboarb/Dashprof";
+import Progress from "./components/Dashboarb/Progress";
+import Plan from "./components/Dashboarb/Plan";
 
 function App() {
   return (
@@ -40,6 +44,11 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/tication" element={<Tication />} />
             <Route path="/sign" element={<Login />} />
+
+            <Route path="/bayad" element={<Bayad />} />
+            <Route path="/dash" element={<Dashprof />} />
+            <Route path="/prog" element={<Progress />} />
+            <Route path="/read" element={<Plan />} />
             
             <Route path="*" element={<Mhome />} />
             <Route path="/train" element={<Trainers />} />
